@@ -86,10 +86,10 @@ function CreateForm() {
                         <Textarea className="my-2" 
                             onChange={(event)=>setUserInput(event.target.value)}
                         placeholder="Write descrition of your form"/>
-                        <div className='flex gap-2 my-3 justify-end'>
+                        <div className='flex justify-end gap-2 my-3'>
                             <Button 
                             onClick={()=>setOpenDailog(false)}
-                            variant="destructive">Cancel</Button>
+                            variant="outline" className="text-red-500 border-red-500">Cancel</Button>
                             <Button 
                                 disabled={loading}
                             onClick={()=>onCreateForm()}>
