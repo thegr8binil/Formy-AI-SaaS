@@ -72,7 +72,9 @@ function SideNav() {
         ))}
       </div>
       <div className="fixed w-64 px-6 bottom-2 ">
-        <Button className="w-full">+ Create Form</Button>
+       <Link href="/dashboard/upgrade">
+       <Button className="w-full">Upgrade Now</Button>
+       </Link>
         <div className="mt-2">
           <Progress value={PercFileCreated} />
           <h2 className="mt-2 text-sm text-gray-600">
