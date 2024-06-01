@@ -59,7 +59,7 @@ function SideNav() {
     }
 
   return (
-    <div className='h-screen shadow-md border'>
+    <div className='h-screen border shadow-md'>
         <div className='p-5'>
             {menuList.map((menu,index)=>(
                 <Link href={menu.path}  key={index} 
@@ -73,12 +73,12 @@ function SideNav() {
                 </Link>
             ))}
         </div>
-        <div className='fixed bottom-7 p-6 w-64 '>
+        <div className='fixed w-64 px-6 bottom-2 '>
             <Button className="w-full">+ Create Form</Button>
-            <div className='my-7'>
+            <div className='mt-2'>
             <Progress value={PercFileCreated} />
-            <h2 className='text-sm mt-2 text-gray-600'><strong>{formList?.length} </strong>Out of <strong>3</strong> File Created</h2>
-            <h2 className='text-sm mt-3 text-gray-600'>Upgrade your plan for unlimted AI form build</h2>
+            <h2 className='mt-2 text-sm text-gray-600'><strong>{formList?.length} </strong>Out of <strong>3</strong> File Created</h2>
+            <h2 className='mt-3 text-sm text-gray-600'>Upgrade your plan for unlimted AI form build</h2>
             
             </div>
         </div>

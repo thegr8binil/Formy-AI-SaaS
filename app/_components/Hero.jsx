@@ -23,11 +23,11 @@ export default function Hero() {
           </h1>
           {isSignedIn ? (
             <Link href="/dashboard">
-              <Button className="mt-4 rounded-full">+ Build AI Form</Button>
+              <Button className="mt-4 rounded-lg">+ Build AI Form</Button>
             </Link>
           ) : (
             <Link href="/sign-in">
-              <Button className="mt-4 rounded-full">+ Build AI Form</Button>
+              <Button className="mt-4 rounded-lg">+ Build AI Form</Button>
             </Link>
           )}
         </div>
