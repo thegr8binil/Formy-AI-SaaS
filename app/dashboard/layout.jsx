@@ -1,24 +1,21 @@
-"use client"
-import { SignIn, SignedIn } from '@clerk/clerk-react'
-import React from 'react'
-import SideNav from './_components/SideNav'
+"use client";
+import { SignIn, SignedIn } from "@clerk/clerk-react";
+import React from "react";
+import SideNav from "./_components/SideNav";
 
-function DashboardLayout({children}) {
+function DashboardLayout({ children }) {
   return (
     <SignedIn>
-    <div>
-        <div className='md:w-64 fixed'>
-            <SideNav/>
-        </div>
-        <div className='md:ml-64'>
-      
-        {children}
-       
-        </div>
-       
-    </div>
+     <div className="flex w-screen">
+  <div className="hidden w-64 lg:flex"> 
+    <SideNav />
+  </div>
+  <div className="flex-grow"> 
+    {children}
+  </div>
+</div>
     </SignedIn>
-  )
+  );
 }
 
-export default DashboardLayout
+export default DashboardLayout;

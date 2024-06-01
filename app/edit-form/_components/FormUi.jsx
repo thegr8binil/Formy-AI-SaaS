@@ -31,7 +31,6 @@ function FormUi({
   enabledSignIn = false,
 }) {
   const [formData, setFormData] = useState();
-  let formRef = useRef();
   const { user, isSignedIn } = useUser();
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -47,7 +46,7 @@ function FormUi({
       [name]: value,
     });
   };
-
+  let formRef = useRef();
   const onFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formData);
