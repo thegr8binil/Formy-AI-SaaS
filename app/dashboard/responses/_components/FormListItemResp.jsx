@@ -41,12 +41,11 @@ function FormListItemResp({jsonForm,formRecord}) {
     }
 
   return (
-    <div className='border shadow-sm rounded-lg p-4 my-5'>
+    <div className='p-4 my-1 border rounded-lg shadow-sm'>
        
         <h2 className='text-lg text-black'>{jsonForm?.formTitle}</h2>
         <h2 className='text-sm text-gray-500'>{jsonForm?.formHeading}</h2>
-        <hr className='my-4'></hr>
-        <div className='flex justify-between items-center'>
+        <div className='flex items-center justify-between'>
             <h2 className='text-sm'><strong>45</strong> Responses</h2>
             <Button className="" size="sm"
             onClick={()=>ExportData()}

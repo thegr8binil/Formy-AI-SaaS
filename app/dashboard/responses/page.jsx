@@ -23,10 +23,9 @@ function Responses() {
         setFormList(result);
     }
   return formList&&(
-    <div className='p-10'>
-        <h2 className='font-bold text-3xl flex items-center justify-between'>Responses</h2>
-
-        <div className='grid grid-cols-2 lg:grid-cols-3 gap-5'>
+    <div className='p-4'>
+        <h2 className='flex items-center justify-between text-3xl font-bold'>Responses</h2>
+        <div className='grid grid-cols-1 gap-2 mt-4 md:grid-cols-2 lg:grid-cols-3'>
             {formList&&formList?.map((form,index)=>(
                 <FormListItemResp
                 formRecord={form}
