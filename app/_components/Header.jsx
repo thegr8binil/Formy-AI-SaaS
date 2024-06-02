@@ -24,6 +24,7 @@ function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center justify-center gap-2">
           <div className="mt-1 lg:hidden">
+          {isSignedIn ? (
           <Sheet key="left">
               <SheetTrigger>
                 <Menu size={30} />
@@ -31,7 +32,7 @@ function Header() {
               <SheetContent side="left">
                 <SideNav />
               </SheetContent>
-            </Sheet>
+            </Sheet>) : null}
           </div>
             <Link href={"/"}>
               <Image src={"/logo.svg"} width={120} height={120} alt="logo" />

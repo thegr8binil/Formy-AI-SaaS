@@ -8,8 +8,8 @@ export default function Hero() {
   const { user, isSignedIn } = useUser();
 
   return (
-    <main className="flex flex-col items-center justify-center w-screen h-screen">
-      <div className="flex flex-col items-center justify-center">
+    <main className="flex flex-col items-center justify-between min-h-screen">
+      <div className="flex flex-col items-center justify-center mt-28">
         <h1 className="text-3xl font-semibold text-center text-accentv md:text-4xl lg:text-5xl">
           Transform Your Form Creation
         </h1>
@@ -32,10 +32,10 @@ export default function Hero() {
           )}
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full mt-12 md:mt-20 sm:mt-14">
         <main className="flex flex-col flex-wrap items-center justify-center w-full m-auto mt-6 max-w-13xl">
           <section
-            className="flex flex-col items-center justify-center pb-24 mt-12 space-y-4"
+            className="flex flex-col items-center justify-center pb-24 my-auto mt-12 space-y-4"
             id="features"
           >
             <h2 className="text-xl font-bold tracking-tighter text-center sm:text-2xl md:text-3xl">
@@ -88,14 +88,14 @@ export default function Hero() {
             </section>
           </section>
         </main>
-        <div className="absolute bottom-0 w-full">
+       
+      </div>
+      <div className="w-full m-auto">
           <section className="flex items-center justify-between w-full px-4 py-6 border-t">
-            <h1>Privacy Policy</h1>
-            <h1>Formy - AI</h1>
             <h1>Copyright @ 2024</h1>
+            <h1>Privacy Policy</h1>
           </section>
         </div>
-      </div>
     </main>
   );
 }
