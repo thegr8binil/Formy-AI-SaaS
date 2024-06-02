@@ -54,7 +54,7 @@ function SideNav() {
   };
 
   return (
-    <div className="w-full h-screen border shadow-md">
+    <div className="flex flex-col justify-between w-full h-screen border shadow-md">
       <div className="p-5">
         {menuList.map((menu, index) => (
           <Link
@@ -71,7 +71,7 @@ function SideNav() {
           </Link>
         ))}
       </div>
-      <div className="fixed w-64 px-6 bottom-2 ">
+      <div className="px-6">
        <Link href="/dashboard/upgrade">
        <Button className="w-full">Upgrade Now</Button>
        </Link>
