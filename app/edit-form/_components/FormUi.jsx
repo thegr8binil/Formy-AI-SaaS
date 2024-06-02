@@ -90,7 +90,7 @@ function FormUi({
     <form
       ref={(e) => (formRef = e)}
       onSubmit={onFormSubmit}
-      className="border p-5 md:w-[600px] rounded-lg"
+      className="border p-2 md:w-[600px] rounded-lg"
       data-theme={selectedTheme}
       style={{
         boxShadow: selectedStyle?.key == "boxshadow" && "5px 5px 0px black",

@@ -90,15 +90,14 @@ function EditForm({ params }) {
   }
 
   return (
-    <div className='p-10'>
-      <div className='flex justify-between items-center'>
-        <h2 className='flex gap-2 items-center my-5 cursor-pointer
-        hover:font-bold ' onClick={() => router.back()}>
+    <div className='p-3'>
+      <div className='flex items-center justify-between'>
+        <h2 className='flex items-center gap-2 my-5 cursor-pointer hover:font-bold ' onClick={() => router.back()}>
           <ArrowLeft /> Back
         </h2>
         <div className='flex gap-2'>
           <Link href={'/aiform/' + record?.id} target="_blank">
-            <Button className="flex gap-2" > <SquareArrowOutUpRight className='h-5 w-5' /> Live Preview</Button>
+            <Button className="flex gap-2" > <SquareArrowOutUpRight className='w-5 h-5' /> Live Preview</Button>
           </Link>
           <RWebShare
             data={{
@@ -108,13 +107,13 @@ function EditForm({ params }) {
             }}
             onClick={() => console.log("shared successfully!")}
           >
-            <Button className="flex gap-2 bg-green-600 hover:bg-green-700"> <Share2 /> Share</Button>
+            <Button className="flex gap-2 text-sm bg-green-600 hover:bg-green-700"> <Share2/></Button>
 
           </RWebShare>
 
         </div>
       </div>
-      <div className='grid grid-cols-1  md:grid-cols-3 gap-5'>
+      <div className='grid grid-cols-1 gap-5 md:grid-cols-3'>
         <div className='p-5 border rounded-lg shadow-md'>
           <Controller
             selectedTheme={(value) => {
@@ -137,8 +136,7 @@ function EditForm({ params }) {
             }}
           />
         </div>
-        <div className='md:col-span-2 border rounded-lg p-5 
-             flex items-center justify-center'
+        <div className='flex items-center justify-center p-5 border rounded-lg md:col-span-2'
           style={{
             backgroundImage: selectedBackground
           }}
